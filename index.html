@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Pro Wireless Headphones | LuxeAudio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Luxe<span>Audio</span></a>
+            <ul class="nav-menu">
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">New Releases</a></li>
+                <li><a href="#">Stories</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-icon-btn">
+                    <span class="icon">🛒</span>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Product Layout Container -->
+    <main class="product-container">
+        
+        <!-- Left Column: Interactive Image Gallery -->
+        <section class="product-gallery">
+            <div class="main-image-container">
+                <!-- Using placeholder images representing product color variants/angles -->
+                <img src="https://unsplash.com" alt="Aura Pro Wireless - Classic Black" id="main-product-img">
+            </div>
+            <div class="thumbnail-grid">
+                <img src="https://unsplash.com" alt="View 1" class="thumb active">
+                <img src="https://unsplash.com" alt="View 2" class="thumb">
+                <img src="https://unsplash.com" alt="View 3" class="thumb">
+            </div>
+        </section>
+
+        <!-- Right Column: Product E-commerce Engine Info -->
+        <section class="product-details">
+            <span class="brand-tag">Premium Audio</span>
+            <h1 class="product-title">Aura Pro Wireless Headphones</h1>
+            
+            <!-- Rating Row -->
+            <div class="rating-container">
+                <span class="stars">★★★★★</span>
+                <span class="reviews-count">(142 customer reviews)</span>
+            </div>
+
+            <!-- Price Row -->
+            <div class="price-row">
+                <span class="current-price" id="price-display">$299.00</span>
+                <span class="original-price">$349.00</span>
+                <span class="discount-badge">Save $50</span>
+            </div>
+
+            <p class="product-short-description">
+                Experience sound in its purest form. Featuring hybrid Active Noise Cancellation, custom-engineered high-fidelity dynamic drivers, and an industry-leading 40-hour battery life wrapper framework.
+            </p>
+
+            <!-- Color Options Selection -->
+            <div class="option-group">
+                <h4>Color: <span id="color-label" style="font-weight: 500; color: var(--text-dark);">Classic Black</span></h4>
+                <div class="color-picker">
+                    <button class="color-dot active" data-color="Classic Black" data-price="299.00" data-img="https://unsplash.com" style="background-color: #1e293b;"></button>
+                    <button class="color-dot" data-color="Platinum White" data-price="319.00" data-img="https://unsplash.com" style="background-color: #e2e8f0;"></button>
+                </div>
+            </div>
+
+            <!-- Configuration / Warranty Selector -->
+            <div class="option-group">
+                <h4>Protection Plan:</h4>
+                <div class="size-selector">
+                    <button class="size-btn active">Standard (1 Year)</button>
+                    <button class="size-btn">Plus Care (+ $29)</button>
+                </div>
+            </div>
+
+            <!-- Purchase Operations Row -->
+            <div class="purchase-row">
+                <div class="quantity-counter">
+                    <button id="qty-minus">—</button>
+                    <input type="number" id="qty-input" value="1" min="1" max="10" readonly>
+                    <button id="qty-plus">+</button>
+                </div>
+                <button class="btn btn-primary" id="add-to-cart-btn">Add to Bag</button>
+            </div>
+
+            <!-- Shipping Status Info -->
+            <div class="shipping-info">
+                <p>🟢 <strong>Free Express Shipping</strong> — Delivers within 2-3 business days.</p>
+                <p>🔄 30-Day Risk-Free Return Policy Cover.</p>
+            </div>
+
+            <!-- Description Tabs Module -->
+            <div class="tabs-container">
+                <div class="tabs-header">
+                    <button class="tab-link active" data-tab="specs">Specifications</button>
+                    <button class="tab-link" data-tab="features">Key Features</button>
+                </div>
+                <div class="tab-content active" id="specs">
+                    <ul>
+                        <li><strong>Drivers:</strong> 40mm Custom Dynamic Drivers</li>
+                        <li><strong>Connectivity:</strong> Bluetooth® 5.3 & Ultra-wideband LE</li>
+                        <li><strong>Battery:</strong> Up to 40 Hours (ANC On)</li>
+                        <li><strong>Charging:</strong> USB-C Fast Charge (5 min = 4 hrs)</li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="features">
+                    <p>Features smart transparency modes that adapt safely to ambient surroundings, ergonomic memory foam earcups wrapped in breathable protein leather fabrics, and full multi-point universal device pairing matrix arrays.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 LuxeAudio Global Store front architecture template.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

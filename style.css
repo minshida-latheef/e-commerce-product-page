@@ -1,0 +1,390 @@
+/* Premium E-Commerce Theme Setup variables */
+:root {
+    --primary-action: #0f172a;
+    --primary-hover: #334155;
+    --accent-gold: #b45309;
+    --text-dark: #0f172a;
+    --text-muted: #64748b;
+    --bg-light: #fafafa;
+    --bg-white: #ffffff;
+    --border-light: #e5e7eb;
+    --radius-sm: 6px;
+    --radius-lg: 16px;
+    --shadow-premium: 0 20px 25px -5px rgba(0,0,0,0.03), 0 10px 10px -5px rgba(0,0,0,0.02);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+/* Header Navbar Configuration */
+.header {
+    background: var(--bg-white);
+    border-bottom: 1px solid var(--border-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--text-dark);
+    letter-spacing: -0.5px;
+}
+
+.logo span { color: var(--accent-gold); }
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+
+.nav-menu a:hover { color: var(--text-dark); }
+
+.cart-icon-btn {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    position: relative;
+    padding: 6px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background: var(--accent-gold);
+    color: white;
+    font-size: 0.7rem;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+/* Main Split Product Presentation Page Structure Layout */
+.product-container {
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 60px;
+}
+
+/* Gallery Module Layout mechanics */
+.product-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.main-image-container {
+    background: #f3f4f6;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 4 / 3;
+}
+
+.main-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.thumbnail-grid img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    background: #f3f4f6;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.thumbnail-grid img.active, .thumbnail-grid img:hover {
+    border-color: var(--primary-action);
+    opacity: 0.9;
+}
+
+/* Details Info Right Grid Column Component styling */
+.brand-tag {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--accent-gold);
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.product-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.rating-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.stars { color: #f59e0b; font-size: 0.95rem; }
+.reviews-count { color: var(--text-muted); font-size: 0.85rem; }
+
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.current-price { font-size: 1.8rem; font-weight: 700; color: var(--text-dark); }
+.original-price { font-size: 1.2rem; text-decoration: line-through; color: var(--text-muted); }
+
+.discount-badge {
+    background: #fef3c7;
+    color: #92400e;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+.product-short-description {
+    color: #475569;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+/* Dynamic Option Variant Groups layout control lines */
+.option-group {
+    margin-bottom: 24px;
+}
+
+.option-group h4 {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+
+.color-picker {
+    display: flex;
+    gap: 12px;
+}
+
+.color-dot {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 3px solid white;
+    outline: 1px solid var(--border-light);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color-dot.active { outline: 2px solid var(--primary-action); transform: scale(1.05); }
+
+.size-selector {
+    display: flex;
+    gap: 12px;
+}
+
+.size-btn {
+    background: white;
+    border: 1px solid var(--border-light);
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.size-btn.active, .size-btn:hover {
+    border-color: var(--primary-action);
+    background: var(--primary-action);
+    color: white;
+}
+
+/* Purchase Control Matrix Box element styling blocks */
+.purchase-row {
+    display: flex;
+    gap: 16px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+}
+
+.quantity-counter {
+    display: flex;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    background: white;
+    overflow: hidden;
+}
+
+.quantity-counter button {
+    background: none;
+    border: none;
+    width: 44px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.quantity-counter button:hover { background: #f3f4f6; }
+
+.quantity-counter input {
+    width: 50px;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+}
+
+/* Remove default spin wheels on quantity fields */
+.quantity-counter input::-webkit-outer-spin-button,
+.quantity-counter input::-webkit-inner-spin-button {
+    -webkit-appearance: none; margin: 0;
+}
+
+.btn {
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+}
+
+.btn-primary {
+    background: var(--primary-action);
+    color: white;
+    flex-grow: 1;
+}
+
+.btn-primary:hover { background: var(--primary-hover); }
+
+.shipping-info {
+    border-top: 1px solid var(--border-light);
+    padding-top: 20px;
+    font-size: 0.85rem;
+    color: #475569;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Technical Specification Tabs Section Component rules */
+.tabs-container {
+    margin-top: 40px;
+    background: white;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    padding: 24px;
+}
+
+.tabs-header {
+    display: flex;
+    border-bottom: 1px solid var(--border-light);
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+.tab-link {
+    background: none;
+    border: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    padding-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-link.active {
+    color: var(--primary-action);
+}
+
+.tab-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary-action);
+}
+
+.tab-content { display: none; font-size: 0.9rem; color: #475569; }
+.tab-content.active { display: block; }
+.tab-content ul { padding-left: 18px; display: flex; flex-direction: column; gap: 8px; }
+
+/* Global Footer Layout structure */
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-top: 80px;
+    border-top: 1px solid var(--border-light);
+    background: white;
+}
+
+/* Fluid Device Responsive Media Breakpoints Layout mapping */
+@media (max-width: 968px) {
+    .product-container { grid-template-columns: 1fr; gap: 40px; }
+    .product-title { font-size: 1.8rem; }
+}
