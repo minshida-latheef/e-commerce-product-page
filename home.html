@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxeAudio | Premium Sound Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navigation Bar (Synced setup) -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="home.html" class="logo-wrapper">
+                <div class="logo-icon">🎧</div>
+                <span class="logo-text">Luxe<span>Audio</span></span>
+            </a>
+
+            <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="home.html" class="nav-link active">Home</a></li>
+                <li class="dropdown">
+                    <a href="index.html" class="nav-link dropdown-trigger">Categories ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Headphones</a></li>
+                        <li><a href="#">Earbuds</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="nav-link">New Releases</a></li>
+                <li><a href="#" class="nav-link">Support</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="nav-utility-btn" aria-label="Search">🔍</button>
+                <button class="nav-utility-btn" aria-label="Account">👤</button>
+                <button class="cart-icon-btn" aria-label="Cart">
+                    <span class="icon">🛒</span>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Premium Hero Showcase Section -->
+    <section class="hero-showcase" style="background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); padding: 100px 20px; text-align: center;">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <span class="brand-tag" style="margin-bottom: 16px;">Sound Untethered</span>
+            <h1 style="font-size: 3.5rem; font-weight: 700; letter-spacing: -1px; line-height: 1.1; margin-bottom: 20px;">The New Standard Of <span style="color: var(--accent-gold);">High-Fidelity</span> Audio</h1>
+            <p style="color: var(--text-muted); font-size: 1.2rem; max-width: 600px; margin: 0 auto 40px auto;">Immerse yourself in acoustic perfection. Discover studio-quality wireless headphones, smart ANC noise cancellation, and all-day comfort engineering.</p>
+            <a href="index.html" class="btn btn-primary" style="text-decoration: none; display: inline-block; padding: 16px 40px; border-radius: var(--radius-sm); box-shadow: 0 10px 20px rgba(15,23,42,0.15);">Explore Collections</a>
+        </div>
+    </section>
+
+    <!-- Core Brand Value Propositions -->
+    <section style="max-width: 1300px; margin: 60px auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+        <div style="background: white; border: 1px solid var(--border-light); padding: 30px; border-radius: var(--radius-sm); text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 12px;">🏆</div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 8px; font-weight: 600;">Studio Grade Sound</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Custom-tuned dynamic 40mm acoustic speaker drivers rendering high resolution acoustic spaces.</p>
+        </div>
+        <div style="background: white; border: 1px solid var(--border-light); padding: 30px; border-radius: var(--radius-sm); text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 12px;">⚡</div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 8px; font-weight: 600;">Ultra Fast Charge</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Get up to 5 hours of continuous immersive listening playback with a swift 10-minute USB-C hookup.</p>
+        </div>
+        <div style="background: white; border: 1px solid var(--border-light); padding: 30px; border-radius: var(--radius-sm); text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 12px;">🛡️</div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 8px; font-weight: 600;">2-Year Warranty</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Every dynamic audio asset ordered comes fully protected under our signature hardware shield replacement plans.</p>
+        </div>
+    </section>
+
+    <!-- Trending Curated Collections Grid -->
+    <section style="max-width: 1300px; margin: 80px auto; padding: 0 20px;">
+        <div style="margin-bottom: 40px; text-align: center;">
+            <span class="brand-tag">Curated Gear</span>
+            <h2 style="font-size: 2.2rem; font-weight: 700; letter-spacing: -0.5px;">Trending Masterpieces</h2>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+            <!-- Product Card Item 1 (Links directly to your main product detail screen) -->
+            <div class="product-gallery" style="background: white; border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 20px; cursor: pointer; transition: transform 0.2s;" onclick="window.location.href='index.html'">
+                <div class="main-image-container" style="aspect-ratio: 1; background: #f8fafc;">
+                    <img src="https://unsplash.com" alt="Aura Pro Wireless">
+                </div>
+                <div style="margin-top: 15px; display: flex; justify-content: space-between; align-items: flex-start;">
+                    <div>
+                        <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark);">Aura Pro Wireless</h4>
+                        <p style="color: var(--text-muted); font-size: 0.85rem;">Hybrid ANC Over-Ear Headphones</p>
+                    </div>
+                    <span style="font-weight: 700; color: var(--text-dark); font-size: 1.1rem;">$299.00</span>
+                </div>
+            </div>
+
+            <!-- Product Card Item 2 -->
+            <div class="product-gallery" style="background: white; border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 20px; cursor: pointer; transition: transform 0.2s;" onclick="window.location.href='index.html'">
+                <div class="main-image-container" style="aspect-ratio: 1; background: #f8fafc;">
+                    <img src="https://unsplash.com" alt="Clarity Buds Elite">
+                </div>
+                <div style="margin-top: 15px; display: flex; justify-content: space-between; align-items: flex-start;">
+                    <div>
+                        <h4 style="font-size: 1.1rem; font-weight: 600; color: var(--text-dark);">Clarity Buds Elite</h4>
+                        <p style="color: var(--text-muted); font-size: 0.85rem;">True Wireless Adaptive Earbuds</p>
+                    </div>
+                    <span style="font-weight: 700; color: var(--text-dark); font-size: 1.1rem;">$179.00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Marketing Collection Banner Section -->
+    <section style="background: #0f172a; color: white; padding: 80px 20px; text-align: center; margin-top: 100px;">
+        <div style="max-width: 550px; margin: 0 auto;">
+            <h3 style="font-size: 2rem; font-weight: 700; margin-bottom: 12px; color: white;">Join The LuxeAudio Circle</h3>
+            <p style="color: #94a3b8; font-size: 0.95rem; margin-bottom: 30px;">Subscribe to receive exclusive access to early product drops, member pricing rewards, and high fidelity tech stories.</p>
+            
+            <form style="display: flex; gap: 10px;" onsubmit="event.preventDefault(); alert('Subscribed successfully!'); this.reset();">
+                <input type="email" placeholder="Enter your email address" required style="flex-grow: 1; padding: 14px 20px; border-radius: var(--radius-sm); border: 1px solid #334155; background: #1e293b; color: white; outline: none; font-size: 0.95rem;">
+                <button type="submit" class="btn" style="background: white; color: #0f172a; padding: 14px 28px; white-space: nowrap;">Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Global Layout Footer Component -->
+    <footer class="footer" style="margin-top: 0;">
+        <p>&copy; 2026 LuxeAudio Global Store front architecture template.</p>
+    </footer>
+
+    <!-- Hook responsive menu script file directly -->
+    <script src="script.js"></script>
+</body>
+</html>
