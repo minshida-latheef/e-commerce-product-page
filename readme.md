@@ -35,3 +35,5 @@ Because this project is built entirely as a pure **frontend template application
 
 ## 🔒 Session Limitations
 This system operates entirely as a **100% frontend implementation template**. Shopping bag data states and selected options live transiently inside browser memory. Refreshing the browser environment or closing the application tab will safely clear data values back to the default black option setup.
+
+[Click to View](https://minshida-latheef.github.io/e-commerce-product-page/)
